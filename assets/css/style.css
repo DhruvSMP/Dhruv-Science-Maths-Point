@@ -176,7 +176,9 @@ body {
   #REUSED STYLE
 \*-----------------------------------*/
 
-.container { padding-inline: 15px; }
+.container { 
+  padding-inline: 15px; 
+}
 
 .section { padding-block: var(--section-padding); }
 
@@ -285,7 +287,12 @@ body {
   margin-block: 15px 25px;
 }
 
-.grid-list {
+.grid-list-1 {
+  display: grid;
+  gap: 30px;
+}
+
+.grid-list-2 {
   display: grid;
   gap: 30px;
 }
@@ -511,6 +518,8 @@ body {
 .about {
   padding-block-start: 0;
   overflow: hidden;
+  position: relative;
+  top: 100px;
 }
 
 .about .container {
@@ -760,6 +769,25 @@ body {
 
 
 
+.stats-cards {
+  text-align: center;
+  padding: 25px;
+  border-radius: var(--radius-10);
+  position: relative;
+}
+
+.stats-cards :is(.card-title, .card-text) { font-family: var(--ff-league_spartan); }
+
+.stats-cards .card-title {
+  color: hsl(var(--color));
+  font-size: var(--fs-2);
+  line-height: 1.1;
+}
+
+.stats-cards .card-text {
+  color: var(--eerie-black-1);
+  text-transform: uppercase;
+}
 
 
 /*-----------------------------------*\
@@ -961,9 +989,12 @@ body {
     margin-inline: auto;
   }
 
-  .grid-list { grid-template-columns: 1fr 1fr; }
+  .grid-list-1 { grid-template-columns: 1fr 1fr; }
+  .grid-list-2 { grid-template-columns: 1fr 1fr; }
 
-  :is(.course, .blog) .grid-list { grid-template-columns: 1fr; }
+
+  :is(.course, .blog) .grid-list-1 { grid-template-columns: 1fr; }
+  :is(.course, .blog) .grid-list-2 { grid-template-columns: 1fr; }
 
 
 
@@ -1055,7 +1086,8 @@ body {
 
   .btn { padding: 15px 30px; }
 
-  :is(.course, .blog) .grid-list { grid-template-columns: 1fr 1fr; }
+  :is(.course, .blog) .grid-list-1 { grid-template-columns: 1fr 1fr; }
+  :is(.course, .blog) .grid-list-2 { grid-template-columns: 1fr 1fr; }
 
 
 
@@ -1171,9 +1203,11 @@ body {
 
   .container { max-width: 960px; }
 
-  .grid-list { grid-template-columns: repeat(4, 1fr); }
+  .gird-list-2 { grid-template-columns: repeat(4, 1fr); }
+  .grid-list-1 { grid-template-columns: repeat(3, 1fr); }
 
-  :is(.course, .blog) .grid-list { grid-template-columns: repeat(3, 1fr); }
+  :is(.course, .blog) .grid-list-1 { grid-template-columns: repeat(3, 1fr); }
+  :is(.course, .blog) .grid-list-2 { grid-template-columns: repeat(4, 1fr); }
 
 
 
