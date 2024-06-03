@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Instructors</title>
+    <style>
+.card-icons{
+    background-color: hsla(var(--color), 0.1);
+  width:  150px;
+  height: 225px;
+  display: grid;
+  place-items: center;
+  margin-inline: auto;
+  margin-block-end: 30px;
+}
+    </style>
 </head>
 <body>
     <header class="header" data-header>
@@ -80,7 +91,80 @@
 
         </div>
     </header>
-
+    <main>
+        <section class="section category" aria-label="category">
+            <div class="container">
+       
+              <ul class="grid-list teach">
+    
+                <li>
+                  <div class="category-card" style="--color: 170, 75%, 41%">
+    
+                    <div class="card-icon">
+                      <img src="./assets/images/category-1.svg" width="40" height="40" loading="lazy"
+                        alt="Dhruvita Mam" class="img">
+                    </div>
+    
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Dhruvita Mam</a>
+                    </h3>
+    
+                    <p class="card-text">
+                      Lorem ipsum dolor consec tur elit adicing sed umod tempor.
+                    </p>
+    
+                    <span class="card-badge">7 Classes Taught</span>
+    
+                  </div>
+                </li>
+    
+                <li>
+                  <div class="category-card" style="--color: 351, 83%, 61%">
+    
+                    <div class="card-icons">
+                      <img src="#" width="40" height="40" loading="lazy"
+                        alt="Kavita Mam" class="img">
+                    </div>
+    
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Kavita Mam</a>
+                    </h3>
+    
+                    <p class="card-text">
+                      Lorem ipsum dolor consec tur elit adicing sed umod tempor.
+                    </p>
+    
+                    <span class="card-badge">4 Classes Taught</span>
+    
+                  </div>
+                </li>
+    
+                <li>
+                  <div class="category-card" style="--color: 229, 75%, 58%">
+    
+                    <div class="card-icon">
+                      <img src="./assets/images/category-3.svg" width="40" height="40" loading="lazy"
+                        alt="Rohit Sir" class="img">
+                    </div>
+    
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Rohit Sir</a>
+                    </h3>
+    
+                    <p class="card-text">
+                      Lorem ipsum dolor consec tur elit adicing sed umod tempor.
+                    </p>
+    
+                    <span class="card-badge">8 Classes Taught</span>
+    
+                  </div>
+                </li>
+    
+              </ul>
+    
+            </div>
+          </section>
+    </main>
     <footer class="footer" style="background-image: url('./assets/images/footer-bg.png')">
 
         <div class="footer-top section">
@@ -190,13 +274,13 @@
                     <ul class="social-list">
 
                         <li>
-                            <a href="#" class="social-link">
+                            <a href="https://www.facebook.com/sciencemaths.point" class="social-link">
                                 <ion-icon name="logo-facebook"></ion-icon>
                             </a>
                         </li>
 
                         <li>
-                            <a href="#" class="social-link">
+                            <a href="https://www.linkedin.com/in/dhruv-sciencemaths-point-53b785311/" class="social-link">
                                 <ion-icon name="logo-linkedin"></ion-icon>
                             </a>
                         </li>
@@ -214,7 +298,7 @@
                         </li>
 
                         <li>
-                            <a href="#" class="social-link">
+                            <a href="https://studio.youtube.com/channel/UCDcTN_2k6Qo5mcUtn6TDyaA" class="social-link">
                                 <ion-icon name="logo-youtube"></ion-icon>
                             </a>
                         </li>
@@ -229,14 +313,6 @@
 
 
     </footer>
-
-        <!-- 
-    - #BACK TO TOP
-  -->
-
-  <a href="#top" class="back-top-btn" aria-label="back top top" data-back-top-btn>
-    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
-</a>
 <script src="./assets/js/script.js"></script>
 <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
