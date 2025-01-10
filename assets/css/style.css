@@ -444,7 +444,6 @@ body {
 }
 
 .contact-image {
-  flex: 1;
   background-color: #f5f5f5;
   display: flex;
   justify-content: center;
@@ -452,8 +451,8 @@ body {
 }
 
 .contact-image img {
-  max-width: 100%;
-  height: auto;
+  max-width: 545px;
+  height: 450px;
 }
 
 .contact-form {
@@ -674,6 +673,7 @@ nav a {
   padding: 10px;
   overflow: hidden;
   transition: width 0.5s cubic-bezier(0.9, 0, 0.3, 0.9);
+  right: 50px;
 }
 
 .search__input {
@@ -1251,8 +1251,8 @@ nav a {
 }
 
 .blog-post img {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   margin: 10px;
 }
 
@@ -2123,4 +2123,8 @@ nav a {
     position: absolute;
     top: -25px;
   }
+}
+
+.maintenece{
+  text-align: center;
 }
